@@ -1,0 +1,35 @@
+# Telugu RAG — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Web framework ──────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# ── LangChain stack ────────────────────────────────────────────
+langchain>=1.0.0
+langchain-core>=1.0.0
+langchain-community>=0.3.0
+langchain-chroma>=0.1.0
+langchain-text-splitters>=0.3.0
+
+# ── Embeddings ─────────────────────────────────────────────────
+sentence-transformers>=3.0.0
+huggingface_hub>=0.24.0
+
+# ── Vector store ───────────────────────────────────────────────
+chromadb>=0.5.0
+
+# ── Wikipedia fetching & HTML cleaning ────────────────────────
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# ── Data validation (used by FastAPI) ─────────────────────────
+pydantic>=2.7.0
+
+# ── Optional: Ollama LLM backend ──────────────────────────────
+# Uncomment when ready to connect a local LLM via Ollama:
+# langchain-ollama>=0.1.0
+
+# ── Optional: OpenAI-compatible endpoint (LM Studio, vLLM) ───
+# Uncomment when ready to connect an OpenAI-compatible API:
+# openai>=1.30.0
